@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(aac87ads-1920.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1{
+            background-color:rgba(215, 255, 215, 0.645) ;
+            text-align: center;
+            padding: 20px;
+            color: rgb(36, 64, 17);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 5px 5px 5px rgb(37, 107, 48);
+        }
+        main{
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgba(234, 255, 234, 0.645) ;
+            padding: 25px;
+            height:100vh;
+            position: relative;
+        }
+        .stih::before{
+            content:open-quote;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .stih::after{
+            content: close-quote;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .stih{
+            font-family: 'Balsamiq Sans', cursive;
+            top: 150px;
+            left: 50px;
+            position: absolute;
+        }
+        .stih2{
+            left: 50%;
+            top: 200px;
+            transform: rotate(5deg);
+        }
+        .stih3{
+            left: 70%;
+            top: 200px;
+            transform: rotate(-5deg);
+
+        }
+        ul{
+            position: absolute;
+            left: 60px;
+            top: 500px;
+            background-color:rgba(119, 238, 0, 0.58) ;
+            padding: 20px;
+            list-style-type: none;
+        }
+        li{
+            background-image: url(flower_icon-icons.com_53242.png);
+            background-repeat: no-repeat;
+            padding-left: 40px;
+        }
+        th, td{
+            padding: 30px;
+            border: 10px groove springgreen;
+            border-spacing: 20px;
+        }
+        table{
+            position: absolute;
+            top: 600px;
+            left: 70px;
+        }
+        img{
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Весна</h1>
+        <p class="stih">
+            Деньки стоят погожие,<br> На праздники похожие, <br> А в небе — солнце теплое,<br> Веселое и доброе. <br> Все реки разливаются,<br> Все почки раскрываются,<br> Ушла зима со стужами,<br> Сугробы стали лужами. <br> Покинув страны южные,<br> Вернулись птицы дружные. <br> На каждой ветке скворушки <br> Сидят и чистят перышки. <br> Пришла пора весенняя, <br> Пришла пора цветения. <br> И, значит, настроение <br> У всех людей — весеннее!
+        </p>
+        <p class="stih stih2">
+            Зелень нивы, рощи лепет,<br> В небе жаворонка трепет,<br> Теплый дождь, сверканье вод,-<br> Вас назвавши, что прибавить?<br> Чем иным тебя прославить,<br> Жизнь души, весны приход?
+        </p>
+        <p class="stih stih3">
+            Травка зеленеет,<br> Солнышко блестит;<br> Ласточка с весною<br> В сени к нам летит. <br> С нею солнце краше<br> И весна милей… <br>Прощебечь с дороги<br> Нам привет скорей!<br> Дам тебе я зерен,<br> А ты песню спой,<br> Что из стран далеких<br> Принесла с собой…
+        </p>
+        <ul>
+            <li>Весенние птицы</li>
+            <li>Тепло</li>
+            <li>Цветы</li>
+        </ul>
+        <table>
+            <caption>Календарь весны</caption>
+            <tr>
+                <th>Март</th>
+                <th>Апрель</th>
+                <th>Май</th>
+            </tr>
+            <tr>
+                <td>1 марта - день кошек</td>
+                <td>1 апреля - день смеха</td>
+                <td>1 мая - день труда</td>
+            </tr>
+            <tr>
+                <td>8 марта - день женщин</td>
+                <td>12 апреля - день авиации</td>
+                <Td>9 мая - день победы</Td>
+            </tr>
+        </table>
+        <audio src="slavka-chernogolovka-i-solovey-u-lesnogo-ruchya-27030.mp3"></audio>
+        <img src="2299.jpg" alt="" onclick="runaudio()">
+    </main>
+    <script>
+     function runaudio(){
+        document.querySelector("audio").play()
+     }
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зима</title>
+    <style>
+        body{
+            background-image: url(zima2.jpg);
+            background-attachment: fixed;
+        }
+        h1{
+            background-color: rgba(255, 255, 255, 0.693);
+            padding: 25px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 5px 5px 5px rgb(138, 143, 147);
+        }
+        li{
+          background-image: url(snowflake-512_icon-icons.com_76425.png);
+          background-repeat: no-repeat; 
+          background-position: left;
+          padding-left: 40px;
+        }
+        main{
+            width: 50%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.693);
+            padding: 25px;
+            height: fit-content;
+        }
+        ol{
+            list-style-type: none;
+            font-size: 25px;
+            line-height: 150%;
+        }
+        #slider{
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+        #slider img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            position: absolute;
+        }
+        #slider input{
+            position: absolute;
+            top: 275px;
+            z-index: 10;
+        }
+        #pic1{
+            left: 45%;
+        }
+        #pic2{
+            left: 50%;
+        }
+        #pic3{
+            left: 55%;
+        }
+        #pic1:checked~#zima1{
+            z-index: 9;
+        }
+        #pic2:checked~#zima2{
+            z-index: 9;
+        }
+        #pic3:checked~#zima3{
+            z-index: 9;
+        }
+        #snowflakes{
+            position: relative;
+            height: 500px;
+            background-color: rgba(236, 240, 245, 0.889);
+            background-image: url(les-zima-sneg-tropa.jpg);
+        }
+        #sf1{
+            position: absolute;
+            top: 10px;
+            left: 10%;
+            animation: snowfall 2s infinite;
+        }
+        #sf2{
+            position: absolute;
+            top: 20px;
+            left: 30%;
+            animation: snowfall 2s infinite;
+        }
+        #sf3{
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            animation: snowfall 2s infinite;
+        }
+        #sf4{
+            position: absolute;
+            top: 40px;
+            left: 70%;
+            animation: snowfall 2s infinite;
+        }
+        #sf5{
+            position: absolute;
+            top: 50px;
+            left: 90%;
+            animation: snowfall 2s infinite;
+        }
+        @keyframes snowfall{
+            from{top: 10px;}
+            to{top: 500px;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Зима 2022</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis unde vitae odio, et quis nihil quod a dolorum aut incidunt commodi cumque enim eum numquam distinctio nostrum repudiandae officiis ratione!</p>
+    <ol>
+       <li>Снег</li>
+       <li>короткие дни</li>
+       <li>Мороз</li>
+    </ol>
+    <div id="slider">
+        <input type="radio" name="pic" id="pic1">
+        <input type="radio" name="pic" id="pic2">
+        <input type="radio" name="pic" id="pic3">
+        <img src="foto-zimi-28.jpg" alt="" id="zima1">
+        <img src="49B3EB63-0D16-4FC6-A5F2-39DBA9ADD990.jpeg" alt="" id="zima2">
+        <img src="zima_sneg_pokrov_noch_svet_derevya_hvoynye_zvezdy_siniy_belyy_62288_1920x1080.jpg" alt="" id="zima3">
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, nobis iste eveniet iusto, id possimus voluptatem ab, nam amet vitae quos similique. Reprehenderit maiores, hic laudantium nobis repellat dolores iusto.</p>
+    <div id="snowflakes">
+       <img src="3856404-christmas-cold-snowflake-winter_112776.png" alt="" id="sf1">
+       <img src="3856404-christmas-cold-snowflake-winter_112776.png" alt="" id="sf2">
+       <img src="3856404-christmas-cold-snowflake-winter_112776.png" alt="" id="sf3">
+       <img src="3856404-christmas-cold-snowflake-winter_112776.png" alt="" id="sf4">
+       <img src="3856404-christmas-cold-snowflake-winter_112776.png" alt="" id="sf5">
+    </div>
+    </main>
+</body>
+</html>

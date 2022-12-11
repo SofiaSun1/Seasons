@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лето</title>
+    <style>
+      body{
+        background-image: url(1650607781_17-vsegda-pomnim-com-p-foto-tsvetenie-letom-29.jpg);
+      }
+      .gridContener{
+        display: grid;
+        grid-template-columns:repeat(8,1fr);
+        grid-template-rows: repeat(8,5vw);
+        grid-gap: 15px;
+      }
+      .stih{
+        background-color: rgba(65, 255, 65, 0.509);
+        padding: 50px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        font-size: 25px;
+        width: fit-content;
+        margin: auto;
+      }
+      .list{
+        background-color: rgba(65, 255, 65, 0.509);
+        padding: 50px;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        font-size: 25px;
+        width: fit-content;
+        margin: auto;
+      }
+      h1{
+        color: rgb(226, 226, 226);
+      }
+      .calendar{
+        background-color: rgba(128, 255, 0, 0.6);
+        padding: 50px;
+        grid-row-start: 1;
+        grid-row-end: 9;
+      }
+      .spdl{
+        width: 100%;
+      }
+      .yas{
+        width: 100%;
+      }
+      .animals{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        animation: go 5s forwards;
+      }
+      @keyframes go{
+        from{transform: translateX(0%);}
+      to{transform: translateX(100vw);}
+      }
+    </style>
+</head>
+<body>
+    <h1>Лето</h1>
+    <div class="gridContener">
+        <p class="stih">Солнечный зайчик<br> Запрыгнул в окно,<br> Солнечный зайчик<br> Сказал:-«О-го-го!»<br> Я тут же проснулась,<br> Ему улыбнулась,<br> Слегка потянулась… <br> На сердце легко!</p>
+        <div class="list">
+        <h2>Признаки лета</h2>
+        <ol>
+          <li>Жара</li>
+          <li>Комары</li>
+          <li>Поездки</li>
+          <li>Каникулы</li>
+          <li>Клубника</li>
+        </ol>
+        </div>
+        <div class="calendar">
+          <h2>Календарь лета</h2>
+          <details>
+            <summary>1 июня</summary>
+            <h3>день защиты детей</h3>
+            <img src="photo_2022-06-01_11-01-48.jpg" alt="" class="spdl">
+          </details>
+          <details>
+            <summary>21 июня</summary>
+            <h3>день солнцестояния</h3>
+            <p>самый длинный день, и самая короткая ночь в году</p>
+          </details>
+          <details>
+            <summary>19 августа</summary>
+            <h3> Яблочный спас</h3>
+            <img src="kaiwKp3w4EE.jpg" alt="" class="yas">
+          </details>
+        </div>
+    </div>
+    <img src="korol-lev-animatsionnaya-kartinka-0063.gif" alt="" class="animals">
+</body>
+</html>
